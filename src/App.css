@@ -1,0 +1,167 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f0f2f5; 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.signup-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow: hidden;  
+  width: 80%;        
+  max-width: 1200px; 
+  margin: 20px;
+}
+
+.signup-form {
+  padding: 40px;
+  width: 50%;
+  box-sizing: border-box; 
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.signup-text {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.password-input {
+  position: relative;
+  display: flex; 
+  align-items: center; 
+}
+
+.password-input input {
+  padding-right: 30px;  
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #999;
+}
+
+.signup-button {
+  background-color: #3b82f6; 
+  color: #fff;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.signup-button:hover {
+  background-color: #2563eb;
+}
+
+.or-divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #999;
+}
+
+.google-signup {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 14px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.google-signup:hover {
+  background-color: #f9f9f9;
+}
+
+.google-icon {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.login-prompt {
+  text-align: center;
+  margin-top: 30px;
+  color: #666;
+}
+
+.login-prompt a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.image-container {
+  width: 50%;
+  background-image: url('images/signup.jpg'); 
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column; 
+    width: 95%;          
+  }
+
+  .signup-form {
+    width: 100%;
+    padding: 20px;    
+  }
+
+  .image-container {
+    width: 100%;     
+    height: 300px;  
+  }
+}
